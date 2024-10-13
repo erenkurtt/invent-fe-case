@@ -1,0 +1,62 @@
+.dashboardMain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 100%; // Single column layout for tablet-sized screens and smaller
+    }  
+}
+
+.main {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+
+    .leftPoster {
+        display: flex;
+        justify-content: center;
+        align-items: center;  /* Center image vertically */
+
+        a {
+            max-height: 200px;
+        }
+        
+        .poster {
+            width: 100%;         /* Fixed width */
+            height: 200px;    /* Limit the image height */
+            object-fit: cover;    /* Ensure it fills the box while keeping aspect ratio */
+            margin-right: 15px;
+            border-radius: 10px;
+            min-width: 140px;
+        }
+    }
+
+    .rightDetails {
+        padding-left: 15px;
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.803);;
+        }
+        .detailsMain {
+            .detailsMainItem {
+                font-size: 14px;
+                margin-right: 12px;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.505);
+            }
+        }
+        .details {
+            font-size: 14px;
+            margin-right: 12px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.826);
+            span {
+                color: rgba(0, 0, 0, 0.505);
+            }
+        }
+    }
+}

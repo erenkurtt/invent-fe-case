@@ -1,0 +1,97 @@
+.detailedMain {
+    .detailedTopSide {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 855px) {
+            flex-direction: column; // Single column layout for tablet-sized screens and smaller
+            align-items: baseline;
+        }
+
+        .detailedTopLeft {
+            .title {
+                font-size: 48px;
+                font-weight: 700;
+                color: white;
+            }
+            .info {
+                font-size: 14px;
+                color: #FFFFFFB3;
+                margin-right: 12px;
+            }
+        }
+        .detailedTopRight {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-left: auto;
+
+            @media (max-width: 855px) {
+                margin-left: 0;
+            }
+
+            .detailedTopRightItem {
+                margin-left: 12px;
+
+                @media (max-width: 855px) {
+                    margin-left: 0;
+                }
+
+                .pointTitle {
+                    font-size: 12px;
+                    color: #FFFFFFB3;
+                    text-transform: uppercase;
+                    text-align: end;
+
+                    @media (max-width: 855px) {
+                        text-align: start;
+                    }
+                }
+                .rateSection {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    @media (max-width: 855px) {
+                        justify-content: start;
+                    }
+
+                    .startIcon {
+                        color: yellow; /* or use hex: #FFD700 for a more vibrant yellow */
+                        font-size: 23px;
+                    }
+                    .ratingValue {
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .detailedBottomSide {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+
+        @media (max-width: 630px) {
+            flex-direction: column;
+        }
+
+        .detailedBottomSideRight {
+            margin-left: 30px;
+            .title {
+                font-size: 12px;
+                color: #FFFFFFB3;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            p {
+                color: #FFFFFF;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}

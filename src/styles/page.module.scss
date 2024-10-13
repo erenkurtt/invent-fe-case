@@ -1,0 +1,27 @@
+.PageMain {
+    height: 100vh;
+    overflow: auto;
+    padding: 0px 100px;
+    background-color: #000000e3;
+
+    @media (max-width: 1150px) {
+        padding: 0px 50px;
+    }
+
+    .notFoundPage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+
+        h1 {
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}
